@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export const UseStateDemo3 = () => {
   const [users, setUsers] = useState(["parth","raj"]); //array
   const addUser = ()=>{
-    setUsers([...users,"Dhyey"])
+    setUsers([...users,""])
   }
   return (
     <div style={{ textAlign: "center" }}>
