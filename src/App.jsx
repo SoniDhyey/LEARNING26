@@ -2,22 +2,33 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 //import './App.css'
-import { HeaderComponent } from "./Components/HeaderComponent";
-import { FooterComponent } from "./Components/FooterComponent";
-import ContentComponent from "./Components/ContentComponent";
-import { MapDemo1 } from "./Components/MapDemo1";
-import { MapDemo2 } from "./Components/MapDemo2";
-import { MapDemo3 } from "./Components/MapDemo3";
-import { MapDemo4 } from "./Components/MapDemo4";
-import { MapDemo5 } from "./Components/MapDemo5";
+import { HeaderComponent } from "./components/HeaderComponent";
+import { FooterComponent } from "./components/FooterComponent";
+import ContentComponent from "./components/ContentComponent";
+import { MapDemo1 } from "./components/MapDemo1";
+import { MapDemo2 } from "./components/MapDemo2";
+import { MapDemo3 } from "./components/MapDemo3";
+import { MapDemo4 } from "./components/MapDemo4";
+import { MapDemo5 } from "./components/MapDemo5";
 import { Route, Routes } from "react-router-dom";
-import { NetflixHome } from "./Components/NetflixHome";
-import { NetflixMovies } from "./Components/NetflixMovies";
-import { NetflixShows } from "./Components/NetflixShows";
-import { Navbar } from "./Components/Navbar";
-import { HomeComponent } from "./Components/HomeComponent";
-import  ErrorNotFound  from "./Components/ErrorNotFound";
-import { Watch } from "./Components/Watch";
+import { NetflixHome } from "./components/NetflixHome";
+import { NetflixMovies } from "./components/NetflixMovies";
+import { NetflixShows } from "./components/NetflixShows";
+import { Navbar } from "./components/Navbar";
+import { HomeComponent } from "./components/HomeComponent";
+import { Watch } from "./components/Watch";
+import { UseStateDemo1 } from "./components/UseStateDemo1";
+import { FunctionDemo1 } from "./components/FunctionDemo1";
+import { UseStateDemo2 } from "./components/UseStateDemo2";
+import { UseStateDemo3 } from "./components/UseStateDemo3";
+import { InputDemo1 } from "./Components/input/InputDemo1";
+import { InputDemo2 } from "./Components/input/InputDemo2";
+import { FormDemo1 } from "./Components/Form/FormDemo1";
+import { FormDemo2 } from "./Components/Form/FormDemo2";
+import { FormDemo3 } from "./Components/Form/FormDemo3";
+import { FormDemo4 } from "./Components/Form/FormDemo4";
+import {Employees} from './Components/Employees'
+
 
 function App() {
   return (
@@ -30,7 +41,19 @@ function App() {
         <Route path="/netflixshows" element={<NetflixShows />}></Route>
         <Route path="/" element = {<HomeComponent/>}></Route>
         <Route path="/watch/:name" element = {<Watch/>}></Route>
-        <Route path="/*" element = {<ErrorNotFound/>}></Route>
+        <Route path="/usestatedemo1" element ={<UseStateDemo1/>}></Route>
+        <Route path="/usestatedemo2" element ={<UseStateDemo2/>}></Route>
+        <Route path="/usestatedemo3" element ={<UseStateDemo3/>}></Route>
+        <Route path="/fundemo1" element ={<FunctionDemo1/>}></Route>
+        <Route path="/employees" element ={<Employees/>}></Route>
+        <Route path="/inputdemo1" element = {<InputDemo1/>}></Route>
+        <Route path="/inputdemo2" element = {<InputDemo2/>}></Route>
+        <Route path="/formdemo1" element = {<FormDemo1/>}></Route>
+        <Route path="/formdemo2" element = {<FormDemo2/>}></Route>
+        <Route path="/formdemo3" element = {<FormDemo3/>}></Route>
+        <Route path="/formdemo4" element = {<FormDemo4/>}></Route>
+
+        
       </Routes>
     </div>
   );
